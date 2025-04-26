@@ -1,0 +1,116 @@
+/* Medicine Analyzer specific styles */
+.analyzer-section {
+    background: var(--light-blue);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 80px auto 40px;
+    max-width: 800px;
+}
+.analyzer-section h2 {
+    color: var(--dark-blue);
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#uploadForm {
+    background: var(--primary-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+    color: var(--text-gray);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#imageInput {
+    border: 2px dashed var(--light-gray);
+    padding: 20px;
+    background: var(--secondary-gray);
+    transition: border-color 0.3s ease;
+}
+#imageInput:hover {
+    border-color: var(--primary-blue);
+}
+.btn-analyze {
+    background: var(--primary-blue);
+    color: var(--primary-white);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.btn-analyze:hover {
+    background: var(--dark-blue);
+}
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: var(--primary-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.result-success {
+    color: var(--primary-green);
+}
+.result-error {
+    color: var(--error-red);
+}
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+.loading-spinner {
+    border: 4px solid var(--light-gray);
+    border-top: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Preview Image */
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: none;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .analyzer-section {
+        margin: 60px 20px;
+        padding: 20px;
+    }
+    #uploadForm {
+        padding: 20px;
+    }
+    .analyzer-section h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .analyzer-section {
+        margin: 40px 15px;
+        padding: 15px;
+    }
+    #uploadForm {
+        padding: 15px;
+    }
+    .analyzer-section h2 {
+        font-size: 20px;
+    }
+    .btn-analyze {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

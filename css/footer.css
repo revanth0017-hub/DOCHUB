@@ -1,0 +1,33 @@
+footer {
+    background: var(--dark-blue) !important;
+}
+footer h5 {
+    color: var(--primary-white);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+footer ul li a {
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: var(--primary-blue) !important;
+}
+footer .social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+footer .social-links a:hover {
+    color: var(--primary-blue) !important;
+}
+footer .input-group .form-control {
+    border: none;
+    padding: 0.5rem;
+}
+footer .input-group .btn {
+    background-color: var(--primary-blue);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+footer .input-group .btn:hover {
+    background-color: var(--dark-blue);
+}
